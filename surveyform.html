@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="surveyform.css"/>
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<header>
+  <h1 id="title">Survey Form</h1>
+</header>
+<article>
+    <p id="description">This form is created due to surveying about the best subjects people like </p>
+ </article>
+
+<form id="survey-form">
+  <fieldset>
+    <legend>Survey Form</legend>
+
+
+
+    <div id="grid_container1">
+
+
+        <div class="contained">
+          <label id="name-label" for="name" >Name</label>
+          <input required id="name" type="text" for="name" placeholder=" Type Down Your Name"/>
+        </div>
+
+        <div class="contained">
+          <label  id="email-label" for="email">Email</label>
+        <input id="email" required for="email" type="email" placeholder=" Type Down Your Email">
+        </div>
+
+        <div class="contained">
+          <label id="number-label" for="age">Age</label>
+        <input required id="number" min="3" max="120" for="age" type="number" placeholder="Type Down your Age">
+        </div>
+
+        <div class="contained">
+          <label for="gender">Gender
+          <select id="dropdown" for="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </label>
+        </div>
+
+    </div>
+
+
+
+
+
+
+      <label id="main-label" for = "favorite subjects">
+          Check your favorite subjects
+      </label>
+      <div id="grid_container2">
+  <div class="d2"><label for="checked"><input type="checkbox" for="favorite" value="chemistry">
+    Chemistry</label></div>
+
+    <div class="d3"><label for="checked"><input type="checkbox" for="favorite" value="physics">
+    Physics</label></div>
+
+    <div class="d4"><label for="checked"><input value="math" type="checkbox" for="favorite">
+    Math</label></div>
+
+    <div class="d5"><label for="checked"><input type="checkbox" value="biology" for="favorite">
+    Biology</label></div>
+
+    <div class="d6"><label for="checked"><input type="checkbox" value="geography" for="favorite">
+    Geography</label></div>
+
+    <div class="d7"><label for="checked"><input type="checkbox" value="history" for="favorite">
+    History</label></div>
+
+  </div>
+
+
+      <div id="grid_container3">
+<div id="grid1">
+      <label id="main-double-label" for="schoolEducation" name="school education">Secondary Education</label>
+<div id="grid1">
+      <label class="container1"  value="schoolinfo" name="schoolinfo">
+      <div class="contained"><input for="radio Button" type="radio" value="enteredschool" name="radio button">
+        Enrolled in a school</div>
+        <div class="contained"><input for="radio Button" type="radio" value="noschool" name="radio button">
+        Didn't enroll in a school</div>
+        <div class="contained"><input for="radio Button" type="radio"  value="schoolstudent"name="radio button">
+        I am still student
+      </div>
+      </label>
+</div>
+</div>
+
+  <div class="grid2">
+  <label id="main-double-label" for="college" name="college education">College Education</label>
+<div id="grid2">
+    <label id="college" class="container1" value="collegeinfo" name="collegeinfo">
+      <div class="contained"><input for="radio Button" type="radio"  value="enteredcollege"name="radio button">
+      Enrolled in a college</div>
+      <div class="contained"><input for="radio Button" type="radio" value="nocollege" name="radio button">
+      Didn't enroll to a college</div>
+      <div class="contained"><input for="radio Button" type="radio" value="student" name="radio button">
+          I am still student</div>
+    </label>
+</div>
+</div>
+      </div>
+
+
+  <label name="comments" for="comments" id="main-label">Additional Comments</label>
+  <textarea placeholder="Type Down your suggestions or comments..."></textarea>
+  <button value="submit" for="submit" id="submit">Submit</button>
+  </fieldset>
+</form>
+</body>
+</html>
